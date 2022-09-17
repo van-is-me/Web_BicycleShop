@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2022, 9:29:17 AM
+    Author     : dell
+*/
+.body {
+    display: flex;
+
+}
+
+td , th{
+    text-align: center;
+}
+
+.checkout__container {
+    width: 40%;
+    margin: 20px auto;
+    background: #f7e9ef;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 360px;
+}
+.product {
+    width: 50%;
+    position: relative;
+    margin: 20px;
+    background: #f1ecec;
+    padding: 10px 10px 40px 10px;
+    border-radius: 10px;
+}
+fieldset {
+    border-radius: 10px;
+
+}
+input {
+    border: none;
+    background: #f7e9ef;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    padding: 0;
+    font-size: 20px;
+    background: #f7e9ef;
+}
+button {
+    width: 40%;
+    padding: 10px 0;
+    margin: 30px 0 30px 160px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #cc2dee;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 28px;
+}
+button:hover {
+    opacity: 0.7;
+}
+
+.total {
+    width: 200px;
+    height: 20px;
+    background: #f760a1;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+}

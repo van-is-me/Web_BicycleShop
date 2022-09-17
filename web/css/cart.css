@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 18, 2022, 1:45:19 PM
+    Author     : dell
+*/
+
+/*config css*/
+th {
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+th,
+td {
+    text-align: center;
+}
+h4 {
+    margin: 0;
+}
+
+/*css*/
+.cart__body__container {
+    width: 100%;
+}
+
+.cart__body__container__table {
+    margin: 50px auto 120px auto;
+    width: 80%;
+}
+
+.cart__body__container__table__product {
+    display: flex;
+    width: 500px;
+    text-align: left;
+}
+
+.cart__body__container__table__product__img {
+    height: 100px;
+    border: 1px solid #fb2e86;
+    border-radius: 10px;
+}
+.cart__body__container__table__product__prop {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    margin: 5px 0 50px 0;
+    border: none;
+    background-color: #fb2e86;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    /*    position: relative;
+        left: 970px;*/
+}
+button:hover {
+    background-color: #f760a1;
+}
+
+.cart__body__container__total-and-pay {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    height: 70px;
+    background-color: #f5f1f1;
+    box-shadow: 1px -4px 11px 1px #000;
+}
+
+.total {
+    font-size: 30px;
+}

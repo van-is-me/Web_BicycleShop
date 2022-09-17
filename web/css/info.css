@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 17, 2022, 7:13:25 PM
+    Author     : dell
+*/
+#app {
+    width: 100%;
+}
+.body-info-address {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+.body-info-address li {
+    margin: 0 20px;
+}
+.body-info-address li a {
+    text-decoration: none;
+    color: #000;
+}
+.body-info-address li a:hover {
+    color: #f760a1;
+}
+.body-info-container {
+    background-color: #f1ecec;
+    width: 100%;
+    display: flex;
+}
+.body-info-container__left {
+    width: 40%;
+}
+
+.body-info-container__left img {
+    width: 100%;
+    height: 400px;
+}
+
+.body-info-container_left_list-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body-info-container_left_list-img img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.body-info-container_left_list-img img:hover {
+    border: 1px solid #cc2dee;
+    transform: rotate(25deg);
+
+}
+
+.body-info-container__right {
+    width: 60%;
+}
+.body-info-container__right h1,
+.body-info-container__right h2,
+.body-info-container__right h3,
+.body-info-container__right select,
+.body-info-container__right input{
+    margin-left: 150px;
+}
+.body-info-container__right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.body-info-container__right form select {
+    width: 80px;
+    height: 40px;
+}
+.body-info-container__right form input {
+    width: 180px;
+    height: 30px;
+}
+.body-info-container__right__add,
+.body-info-container__right__buy {
+    width: 20%;
+    padding: 10px 0;
+    margin: 30px 0 30px 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.body-info-container__right__add:hover,
+.body-info-container__right__buy:hover {
+    opacity: 0.7;
+}
+
+.body-info-container__right__add {
+    background-color: #f8e8ff;
+    color: #cc2dee;
+    border: 1px solid #cc2dee;
+}
+.body-info-container__right__buy {
+    background-color: #cc2dee;
+}
+
+.body-info-container__right div {
+    display: flex;
+}
+.body-info-container__right div del {
+    margin: 19.20px;
+    font-size: 1.5em;
+}
+
+/*slideshow*/
+
+.show-slideshow {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: faceIn linear .2s;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.overplay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-68%, -50%);
+    display: none;
+    position: relative;
+    z-index: 1;
+    animation: growth linear .2s;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.mySlides img{
+    height: 500px;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
